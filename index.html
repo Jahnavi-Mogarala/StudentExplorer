@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Student Explorer</div>
+    <nav>
+      <a href="#students">Students</a>
+      <a href="#stats">Stats</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="glow">Explore Students Across Colleges</h1>
+    <p class="subtext glow">Find, filter, and learn about students from various colleges</p>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by Name, City, College...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <select id="stateFilter">
+      <option value="">All States</option>
+    </select>
+    <select id="courseFilter">
+      <option value="">All Courses</option>
+    </select>
+    <select id="genderFilter">
+      <option value="">All Genders</option>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+    <select id="sortFilter">
+      <option value="">Sort By</option>
+      <option value="name">Name</option>
+      <option value="age">Age</option>
+      <option value="college">College</option>
+    </select>
+  </section>
+
+  <!-- Students Section -->
+  <section id="students" class="students-container"></section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <div class="stat">
+      <h2 id="totalStudents">0</h2>
+      <p>Total Students</p>
+    </div>
+    <div class="stat">
+      <h2 id="totalColleges">0</h2>
+      <p>Total Colleges</p>
+    </div>
+    <div class="stat">
+      <h2 id="totalStates">0</h2>
+      <p>States Covered</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="glow">About Student Explorer</h2>
+    <p>Student Explorer is a vibrant web app to discover, filter, and learn about students from various colleges across India. Designed with glowing animations and pop-up cards for a lively experience!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Explorer | Contact: studentexplorer@example.com</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="studentModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
